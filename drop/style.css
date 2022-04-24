@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%) ;
+    background-repeat: no-repeat;
+}
+.ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 24, 26);
+    margin:5rem auto;
+    width: 80vw;
+    height: 80vh;
+}
+.ball ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 10px solid rgb(63, 127, 143);
+}
+.ball ul li{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    animation: bouncy .5s infinite;
+    animation-direction: alternate;
+}
+@keyframes bouncy{
+    100%{
+        transform: translateY(-300%);
+    }
+    /* 25%{
+        transform: translateY(-75%);
+    }
+    50% */
+}
+.ball ul li:nth-child(1){
+    background-color: rgb(118, 178, 226);
+    animation-delay: .1s;
+}
+.ball ul li:nth-child(2){
+    background-color: rgb(86, 212, 97);
+    animation-delay: .8s;
+}
+.ball ul li:nth-child(3){
+    background-color: rgb(224, 15, 235);
+    animation-delay: .4s;
+}
+.ball ul li:nth-child(4){
+    background-color: rgb(225, 240, 89);
+    animation-delay: .8s;
+}
+.ball ul li:nth-child(1){
+    background-color: rgb(230, 11, 11);
+    animation-delay: .2s;
+}

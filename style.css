@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.element{
+  width: 300px;
+  height: 300px;
+  position:absolute;
+  background-color: rgb(218, 134, 134);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.another{
+  position: absolute;
+  background-color: rgb(248, 241, 241);
+  top:0;
+  left:0;
+  /* transform: translate(-50%,-50%); */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px;
+  box-shadow: 2px 2px 15px rgba(32, 29, 29, 0.1);
+  animation: simple 5s 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes simple{
+  0%{
+    width: 20px;
+    height: 20px;
+  }
+  25%{
+    width: 100px;
+    height: 100px;
+  }
+  50%{
+    width: 150px;
+    height: 150px;
+  }
+  100%{
+    width: 200px;
+    height: 200px;
+  }
+}
